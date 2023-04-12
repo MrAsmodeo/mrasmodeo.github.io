@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feliz cumpleaños Señorita!</title>
+  <style>
+    body {
+      background-color: #f9d5e5;
+      color: #4a4a4a;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      animation: rainbow 5s infinite;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-top: 150px;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      10% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes rainbow {
+      0% {
+        background-color: #f9d5e5;
+      }
+      20% {
+        background-color: #ffd5e5;
+      }
+      40% {
+        background-color: #fff5e5;
+      }
+      60% {
+        background-color: #fff5d5;
+      }
+      80% {
+        background-color: #f9f5d5;
+      }
+      100% {
+        background-color: #f9d5e5;
+      }
+    }
+
+    #cake {
+      width: 350px;
+      display: block;
+      margin: -0 auto;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@2.2.2/confetti.min.js"></script>
+  <script>
+    window.onload = function() {
+      var confettiSettings = { target: 'my-canvas' };
+      var confetti = new ConfettiGenerator(confettiSettings);
+      confetti.render();
+    };
+  </script>
+</head>
+<body>
+  <h1>¡Feliz cumpleaños Señorita!</h1>
+  <canvas id="my-canvas"></canvas>
+  <img src="https://media4.giphy.com/media/zbzdiXxWcLazap6Klk/giphy.gif?cid=ecf05e477n5dopygsccjc9ljstow85ll4psk82rayroafd1f&rid=giphy.gif&ct=g" id="cake">
+  <p>Espero que tengas un día increíble lleno de amor, alegría y sorpresas.</p>
+  <p>¡Que todos tus deseos se hagan realidad!</p>
+  <p>Un abrazo fuerte de mi parte y.... no te olvides te tomar Aguita :3</p>
+</body>
+</html>
+
